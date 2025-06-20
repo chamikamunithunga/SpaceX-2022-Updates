@@ -1,54 +1,31 @@
-# React + TypeScript + Vite
+# SpaceX Launch Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and interactive React + TypeScript web app that tracks upcoming SpaceX launches using the official SpaceX public API. Features include:
 
-Currently, two official plugins are available:
+<img width="1440" alt="Screenshot 2025-06-20 at 3 13 19 PM" src="https://github.com/user-attachments/assets/9c40e0c3-a6a6-4dda-9fa9-02cf1b259491" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Live countdown timers for each launch  
+- Filter launches by year  
+- Load more pagination  
+- Detailed launch pages with extra info and webcast links  
+- Responsive, modern UI with glassmorphic cards and animated background  
+- Sticky navigation bar for easy navigation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Demo
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+
+## Features
+
+- **React 18 + TypeScript** for type-safe, scalable UI  
+- **Axios** for API requests to [SpaceX API](https://github.com/r-spacex/SpaceX-API)  
+- **React Router v6** for multi-page navigation (home & launch details)  
+- **Custom CSS** with glassmorphism, gradients, and animations  
+- Responsive grid layout for mobile and desktop  
+- Clean, accessible UI with hover and focus effects
+
+
