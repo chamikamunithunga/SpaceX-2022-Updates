@@ -1,0 +1,55 @@
+.launch-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow:
+    0 4px 30px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.launch-card:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 8px 40px rgba(255, 200, 0, 0.6),
+    inset 0 0 0 1px rgba(255, 200, 0, 0.8);
+}
+
+.launch-card img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 5px #ffc800);
+}
+
+.launch-card h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.launch-card p {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.launch-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: #222;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(255, 204, 0, 0.7);
+  transition: background 0.3s ease;
+}
+
+.launch-card a:hover {
+  background: linear-gradient(90deg, #ff9900, #ffcc00);
+}
